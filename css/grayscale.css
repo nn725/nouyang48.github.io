@@ -24,9 +24,8 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -371,3 +370,40 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+.propic {
+    width: 70 px;
+    height: 70 px;
+    border-radius: 35;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    background: url(../img/propic.jpg) no-repeat;
+    }
+
+.fade-out {
+    transition: opacity .25s ease-in;
+    -moz-transition: opacity .25s ease-in;
+    -webkit-transition: opacity .25s ease-in;
+    opacity: 1;
+    }
+
+    .fade-out:hover {
+        transition: opacity .25s ease-out;
+        -moz-transition: opacity .25s ease-out;
+        -webkit-transition: opacity .25s ease-out;
+        opacity: 0.5;
+        }
+
+    .fade-out:hover .fade-in {
+        transition: opacity .25s ease-in;
+        -moz-transition: opacity .25s ease-in;
+        -webkit-transition: opacity .25s ease-in;
+        opacity: 1;
+        }
+
+.fade-in {
+    transition: opacity .25s ease-out;
+    -moz-transition: opacity .25s ease-out;
+    -webkit-transition: opacity .25s ease-out;
+    opacity: 0;
+    }
