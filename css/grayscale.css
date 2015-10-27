@@ -24,8 +24,8 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
     letter-spacing: 1px;
 }
 
@@ -165,6 +165,8 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+    word-spacing: 1em;
+    margin-bottom: 0;
 }
 
 @media(min-width:768px) {
@@ -174,7 +176,7 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
+        font-size: 80px;
     }
 
     .intro .intro-body .intro-text {
@@ -186,7 +188,6 @@ a:focus {
     width: 70px;
     height: 70px;
     margin-top: 15px;
-    padding: 7px 16px;
     border: 2px solid #fff;
     border-radius: 100%!important;
     font-size: 40px;
@@ -380,6 +381,13 @@ body {
     background: url(../img/propic.jpg) no-repeat;
     }
 
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+    .propic {
+        background: url(../img/propic@2x.jpg) no-repeat;
+        background-size: 70px, 70px;
+    }
+}
+
 .fade-out {
     transition: opacity .25s ease-in;
     -moz-transition: opacity .25s ease-in;
@@ -395,6 +403,13 @@ body {
         }
 
     .fade-out:hover .fade-in {
+        transition: opacity .25s ease-in;
+        -moz-transition: opacity .25s ease-in;
+        -webkit-transition: opacity .25s ease-in;
+        opacity: 1;
+        }
+
+    .fade-out:focus {
         transition: opacity .25s ease-in;
         -moz-transition: opacity .25s ease-in;
         -webkit-transition: opacity .25s ease-in;
